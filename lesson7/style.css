@@ -1,0 +1,27 @@
+/* global css */
+*{
+    font-size: 30px;
+    font-weight: 900;
+}
+/* External CSS */
+h3{
+    color: aquamarine;
+}
+
+
+/* element selector */
+h4{
+    color:rgba(255, 0, 0, 0.726) ;
+}
+/* class selector */
+.p6{
+    color: magenta;
+}
+/* id selector */
+#MAS{
+    color:greenyellow;
+}
+/* group selector */
+h6,p{
+    color: skyblue;
+}
