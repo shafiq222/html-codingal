@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: chartreuse;
+            color: blueviolet;
+        }
+        h1{
+            color: cornflowerblue;
+        }
+        a{
+            color: violet;
+        }
+        a:hover{
+            color: tomato;
+        }
+
+        ul>li{
+            font-weight: bold;
+        }
+
+        h1+p{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        ul li:hover{
+            color: goldenrod;
+        }
+
+        ul li:nth-child(3){
+            background-color: coral;
+        }
+
+        p:not(:first-of-type){
+            text-decoration: underline;
+        }
+
+        ul li::before{
+            content:"🚀" ;
+        }
+
+        ul li::after{
+            content: "🪐";
+        }
+
+        p::first-letter{
+            font-size: 500%;
+            color: snow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Space Explorer’s Club</h1>
+    <p>space exploration has always captivated human imagination.It is a journey to the unknown</p>
+    
+    <p>from the moon to distant galaxies , we continue to explore the vasteness of space</p>
+    <ul>
+    
+        <li>moon mission</li>
+    
+        <li>Mars rovers</li>
+    
+        <li>International space station</li>
+    
+        <li>Telescopes and stars</li>
+    
+        <li>black hole mysteries</li>
+    
+    </ul>
+    
+    
+    
+    
+    <a href="#">join our mission</a>
+    
+    <a href="#">lastest space news</a>
+    
+    <a href="#">gallery of the universe</a>
+</body>
+</html>
