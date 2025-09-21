@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>JS Class</h6>
+    <p id="dfr1"></p>
+    <script>
+        class dfr{
+            constructor(name,year){
+                this.name=name
+                this.year=year
+            }
+            age(){
+                let date = new Date()
+                return date.getFullYear()-this.year
+            }
+        }
+        dfr1 = new dfr("CBA",1792);
+        document.getElementById("dfr1").innerHTML="My name is"+dfr1.name+"i was born in"  + dfr1.year + " And my age is " + dfr1.age()
+    </script>
+</body>
+</html>
