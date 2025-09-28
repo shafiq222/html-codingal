@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>Error handling in JS</h6>
+    <p id="error"></p>
+    <script>
+        try{
+            addalert("WELCOME HOST OPP")
+        }
+        catch(err){
+            document.getElementById("error").innerHTML = err.message
+        }
+
+         try{
+            alert("WELCOME HOST OPP")
+        }
+        catch(err){
+            document.getElementById("error").innerHTML = err.message
+        }
+    </script>
+</body>
+</html>

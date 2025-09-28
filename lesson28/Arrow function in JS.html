@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow function in JS</h1>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        function add(a,b){
+            return a+b
+        } 
+        document.getElementById("result").innerHTML = add (33,54)
+
+        add = (a,b) => a+b
+        document.getElementById("result1").innerHTML = add(100,900)
+    </script>
+</body>
+</html>
