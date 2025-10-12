@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Palindrome app using JS</h2>
+    <script>
+        function palindrome(text){
+            var input = text.replace(/[^A-Z0-9]/ig,"").toLowerCase();
+            var reversedinput = input.split("").reverse().join("")
+            if (input===reversedinput){
+                document.write("<div>" + text + "is a palindrome <div>")
+            }
+            else{
+                document.write("<div>" + text + "is not a palindrome <div>")
+            }
+        }
+        palindrome("Level")
+    </script>
+</body>
+</html>
