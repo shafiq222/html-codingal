@@ -34,15 +34,52 @@
             background-color: yellowgreen;
             color: whitesmoke;
         }
+
+        h1{
+            text-align: center;
+            color: #666766;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 5px black;
+        }
     </style>
 </head>
 <body>
-    This is home
+    <h1>SPORTS</h1>
      <div class="topnav">
         <a class="active" href="home.html">Home</a>
         <a href="main_sports.html">Main sports</a>
         <a href="location.html">Location</a>
         <a href="emergency_call.html">Call us</a>
     </div>
+
+    <section>
+        <center>
+        <img class="myslides" src="https://png.pngtree.com/background/20250703/original/pngtree-futuristic-skater-neon-lights-cyberpunk-isolated-picture-image_16678424.jpg" style="height: 500px; width: 800px;">
+
+        <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLhpTVrNuGyMljkTe-y-BGKPiYWA1zWkKUA&s" style="height: 500px; width: 800px;">
+
+        <img class="myslides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6AjorR_V2JXzGqGH45XK5ekwj8-MMyiFIVg&s" style="height: 500px; width: 800px;">
+            </center>
+    </section>
+    <script>
+        var myindex =0;
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("myslides");
+             for(i=0 ;i<x.length;i++){
+                x[i].style.display = "none"
+             }
+             
+             myindex++;
+             if(myindex> x.length){
+                myindex = 1
+             }
+
+             x[myindex-1].style.display = "block";
+             setTimeout(carousel,3000);
+             
+        }
+        carousel()
+    </script>
 </body>
 </html>
