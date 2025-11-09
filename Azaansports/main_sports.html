@@ -41,15 +41,87 @@
             font-family: Arial, Helvetica, sans-serif;
             text-shadow: 2px 2px 5px black;
         }
+
+        body,html{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            line-height: 1.8;
+            color: #456745;
+        }
+
+        .pimg1{
+            position: relative;
+            opacity: 0.70;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .pimg1{
+            background-image: url("https://www.shutterstock.com/image-photo/neonstyle-glowing-3d-skateboard-viewed-260nw-2648414775.jpg");
+        }
+
+        .ptext{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #a03232;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .ptext.border{
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .ptext.border.trans{
+            background-color: transparent;
+            color: #f1f1f1;
+        }
+
+        .section-dark{
+            background-color: #282e34;
+            color: #ddd;
+            padding: 50px 80px;
+            text-align: center;
+        }
+
+        .section-dark h2 {
+margin-bottom: 20px;
+color: #fff;
+}
     </style>
 </head>
 <body>
-    <h1>SPORTS</h1>
+    <h1>Skate boarding</h1>
      <div class="topnav">
         <a  href="home.html">Home</a>
         <a class="active" href="main_sports.html">Main sports</a>
         <a href="location.html">Location</a>
         <a href="emergency_call.html">Call us</a>
     </div>
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                What is skate boarding?
+            </span>
+        </div>
+    </div>
+
+    <section class="section-dark">
+        <h2>What is skate boarding?</h2>
+        <p>
+   /         Skateboarding is a sport and recreational activity that involves riding and performing tricks on a skateboard.Riders stand on a flat board with four wheels, using a combination of balance and footwork to propel themselves and
+            execute maneuvers like jumps, flips, and grinds.
+        </p>
+    </section>
 </body>
 </html>
